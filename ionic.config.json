@@ -1,0 +1,7 @@
+{
+  "name": "Tripadvisor-UI-Replica",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}

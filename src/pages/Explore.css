@@ -1,0 +1,208 @@
+
+
+ion-toolbar{
+    padding-left:10px;
+    padding-right: 14px;
+    padding-top: 14px;
+    
+}
+
+ion-title{
+    --color:black;
+    font-family: sans-serif;
+    font-weight: 780;
+    font-size: 25px;
+    margin-top: 15px!important;
+}
+
+ion-title.ios{
+    --color:black;
+    font-family: sans-serif;
+    font-weight: 780;
+    font-size: 25px;
+    margin-top: 15px!important;
+    padding-left: 15px;
+    text-align: left;
+}
+
+@media only screen and (min-width: 900px) {
+    ion-slides{
+        width: 100%;
+        align-items: center;
+        margin-top: 15px!important;
+        padding-left: 25%!important;
+        padding-right: 100%!important;
+        position: absolute;
+    }
+
+    ion-title{
+        --color:black;
+        font-family: sans-serif;
+        font-weight: 780;
+        font-size: 30px;
+        margin-top: 35px!important;
+    }
+
+    ion-slide{
+        width: 140px!important;
+        height: 100%!important;
+    }
+
+    .thirdButton{
+        margin-left: 50px!important;
+    }
+    
+    .fourthButton{
+        margin-left: 50px;
+    }
+}
+
+ion-button{
+    --border-radius: 50px;
+    font-family: sans-serif!important;
+    color: black;
+    font-weight: 500;
+    text-transform: capitalize;
+}   
+
+@media only screen and (max-width: 900px) {
+    ion-slides{ 
+        margin-top: 15px!important;
+    }
+
+    ion-button{
+        height: 45px!important;
+    }
+
+    .firstSlide{
+        margin-left: 6px!important;
+        margin-right: 0px!important;
+    }
+
+    .secondSlide{
+        margin-left: 5px!important;
+
+    }
+
+    .thirdSlide{
+        margin-left: 10px!important;
+        margin-right: 0px!important;
+    }
+
+    .fourthSlide{
+        margin-left: 5px!important;
+        margin-right: 5px!important;
+    }
+
+    ion-list{
+        width: 100%;
+    }
+
+    ion-list-header{
+        font-size: large;
+        font-weight: bold;
+        margin-bottom: 1px!important;
+        --height: 30px!important;
+    }
+
+    .slidesHotels{
+        margin-top: 0px!important;
+    }
+
+    .cardHotels{
+        margin-top: 0px!important;
+    }
+
+    .labelContent{
+        color: black;
+        font-size: small;
+        font-family: sans-serif;
+        margin-top: 1px!important;
+        margin-left: 4%;
+        font-weight: 100;
+    }
+
+    .firstHotels{
+        margin-top: 0px!important;
+        height: 220px!important;
+        width: 220px!important;
+        object-fit: cover;
+        border-radius: 0px!important;
+    }
+
+    .hotels{
+        margin-top: 10px!important;
+        height: 210px!important;
+        width: 210px!important;
+        object-fit: cover;
+        border-radius: 0px!important;
+    }
+
+    .cardHotels{
+        margin-left: 5px;
+        border-radius: 0px;
+    }
+
+    .cardHotels.ios{
+        margin-top: 10px!important;
+    }
+
+    .leftCardHotels{
+        margin-left: 15px;
+        border-radius: 0px;
+    }
+
+    .labelHotels{
+        position: absolute;
+        color: white;
+        font-size: 15px;
+        font-weight: bold;
+        font-family: sans-serif!important;
+        bottom: 0.1px!important;;
+        left: 4px;
+    }
+
+}
+
+ion-button{
+    --background:white!important;
+    --color:black!important;
+
+}
+
+ion-icon{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
+.header-image{
+    width: 100%; 
+    z-index: -1;
+    object-fit:fill; 
+}
+
+ion-avatar{
+    margin-top: 5%;
+    margin-right: 2%;
+    width: 40px;  
+    height: 40px; 
+}
+
+.moon{
+    margin-right: 0px;
+}
+
+.toggle{
+    margin-top: 5%;
+}
+
+ion-icon.ios{
+    margin-right: 5px;
+}
+
+ion-toggle.ios{
+    margin-right: 15px!important;
+    zoom:0.8;
+    --background: white;
+}
