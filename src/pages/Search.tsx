@@ -1,22 +1,42 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { IonButton, IonCard, IonCardHeader, IonCol, IonContent, IonHeader, IonIcon, IonItem, IonLabel, IonList, IonListHeader, IonPage, IonSearchbar, IonTitle, IonToolbar } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
 import './Search.css';
 
 const Search: React.FC = () => {
   return (
     <IonPage>
-      <IonHeader>
-        <IonToolbar>
-          <IonTitle>Tab 2</IonTitle>
-        </IonToolbar>
-      </IonHeader>
-      <IonContent fullscreen>
-        <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">Tab 2</IonTitle>
+      <IonContent>
+        <IonHeader className="ion-no-border">
+          <IonToolbar no-border>
+            <IonTitle>
+              Search
+            </IonTitle>
           </IonToolbar>
         </IonHeader>
-        <ExploreContainer name="Tab 2 page" />
+
+        <IonToolbar>
+        <IonSearchbar></IonSearchbar>
+        </IonToolbar>
+
+        {/* <IonCard className="card">
+          <IonCardHeader className="cardHeader">
+            See what's good nearby.
+          </IonCardHeader>
+          <IonButton className="cardButton center" shape="round" fill="clear">
+            Turn on location settings
+          </IonButton>
+        </IonCard> */}
+
+        <IonList>
+          <IonListHeader>
+            Attractions nearby
+
+            <h4 className="seeAll">See All</h4>
+          </IonListHeader>
+          
+        </IonList>
+
+
       </IonContent>
     </IonPage>
   );

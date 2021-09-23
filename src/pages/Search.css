@@ -1,0 +1,69 @@
+.searchbar-input.sc-ion-searchbar-md {
+    border-radius: 25px;
+    border-color: #7f8490;
+    border-width: 2px !important;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: black;
+    background-color: white;
+}
+
+.center{
+    margin-left: auto;
+    margin-right: auto;
+    display: block !important;
+}
+
+@media only screen and (max-width: 900px) {
+    .button-inner{
+        /* width: 150px; */
+        flex-flow: column;
+        font-weight: bold;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .buttonText{
+        position: absolute;
+        color: black;
+        font-size: 10px;
+        font-family: sans-serif!important;
+        bottom: 5px!important;;
+        left: 5px;
+    }
+    
+    .buttonLabel{
+        position: absolute;
+        color: black;
+        font-size: 10px;
+        font-family: sans-serif!important;
+        bottom: 5px!important;;
+        left: 5px;
+    }
+
+    .card{
+        background-color: rgb(0, 95, 0);
+        border-radius: 0px;
+        align-items: center;
+    }
+
+    .cardHeader{
+        text-align: center;
+        font-size:36px!important;
+        font-weight: 700;
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif!important;
+        padding-left: 30px!important;
+        padding-right: 30px!important;
+    }
+
+    .cardButton{
+        background-color: rgb(0, 95, 0)!important;
+    }
+
+    .seeAll{
+        position: absolute;
+        font-size: small;
+        text-decoration: underline;
+        right: 10px !important;
+    }
+}
