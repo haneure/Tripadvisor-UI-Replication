@@ -1,6 +1,5 @@
-import { IonButton, IonCard, IonCardContent, IonCardHeader, IonCol, IonContent, IonFabButton, IonGrid, IonHeader, IonIcon, IonImg, IonItem, IonLabel, IonList, IonListHeader, IonPage, IonRow, IonSearchbar, IonSlide, IonSlides, IonTitle, IonToolbar } from '@ionic/react';
+import { IonCard, IonCardContent, IonCol, IonContent, IonFabButton, IonGrid, IonHeader, IonIcon, IonImg, IonList, IonListHeader, IonPage, IonRow, IonSearchbar, IonTitle, IonToolbar } from '@ionic/react';
 import { heartOutline } from 'ionicons/icons';
-import ExploreContainer from '../components/ExploreContainer';
 import './Search.css';
 
 const Attractions = [
@@ -31,20 +30,21 @@ const Search: React.FC = () => {
   return (
     <IonPage>
 
-      <IonHeader className="ion-no-border">
-        <IonToolbar no-border>
-          <IonTitle>
+      <IonHeader color="light" className="ion-no-border">
+        <IonToolbar color="light" className="toolbardSearchTitle"no-border>
+          <IonTitle color="light" >
             Search
           </IonTitle>
-        </IonToolbar>
-        <IonToolbar>
+        </IonToolbar >
+        <IonToolbar color="light" >
         <IonSearchbar></IonSearchbar>
         </IonToolbar>
+
       </IonHeader>
 
       <IonContent>
         <IonList>
-          <IonListHeader>
+          <IonListHeader className="attractions">
             Attractions nearby
             <h4 className="seeAll">See All</h4>
           </IonListHeader>
@@ -55,7 +55,7 @@ const Search: React.FC = () => {
                 <IonImg float-left className="imgNearby" src={attract.src}>
                 </IonImg>
               </IonCol>
-              <IonFabButton color="light" className="heart"><IonIcon className="iconHeart" icon={heartOutline}></IonIcon></IonFabButton>
+              <IonFabButton color="light" className="heartSearch"><IonIcon className="iconHeart" icon={heartOutline}></IonIcon></IonFabButton>
               <IonCol>
                 <IonCardContent className="cardContent" float-right>
                   {attract.loc}<br/>
@@ -72,7 +72,7 @@ const Search: React.FC = () => {
         </IonList>
 
         <IonList>
-          <IonListHeader>
+          <IonListHeader className="attractions">
             Cafes nearby
             <h4 className="seeAll">See All</h4>
           </IonListHeader>
@@ -82,7 +82,7 @@ const Search: React.FC = () => {
                 <IonImg float-left className="imgNearby" src={cafes.src}>
                 </IonImg>
               </IonCol>
-              <IonFabButton color="light" className="heart"><IonIcon className="iconHeart" icon={heartOutline}></IonIcon></IonFabButton>
+              <IonFabButton color="light" className="heartSearch"><IonIcon className="iconHeart" icon={heartOutline}></IonIcon></IonFabButton>
               <IonCol>
                 <IonCardContent className="cardContent" float-right>
                   {cafes.loc}<br/>

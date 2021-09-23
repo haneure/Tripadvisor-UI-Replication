@@ -4,8 +4,18 @@
     border-width: 2px !important;
     font-size: 1.1rem;
     font-weight: 400;
-    color: black;
+    color: var(--ion-color-dark);
     background-color: white;
+    
+}
+
+ion-title{
+    color: var(--ion-color-dark);
+}
+
+.toolbardSearchTitle{
+    color: white;
+    padding-bottom: 15px;
 }
 
 .center{
@@ -14,7 +24,11 @@
     display: block !important;
 }
 
-@media only screen and (max-width: 900px) {
+.attractions{
+    font-size: 24px;
+}
+
+@media only screen and (max-width: 768px) {
     .button-inner{
         /* width: 150px; */
         flex-flow: column;
@@ -24,7 +38,7 @@
     }
     .buttonText{
         position: absolute;
-        color: black;
+        color: var(--ion-color-dark);
         font-size: 10px;
         font-family: sans-serif!important;
         bottom: 5px!important;;
@@ -46,12 +60,34 @@
         text-decoration: underline;
         right: 10px !important;
     }
+
+    .rating{
+        color: var(--ion-color-dark);
+    }
+    .heartSearch{
+        z-index: 2;
+        position: absolute;
+        top: 7%!important;
+        left: 24%!important;
+        font-size: 10px!important;
+        --background-color:white;
+        width: 25px;
+        height: 25px;
+    }
+
+}
+
+.seeAll{
+    position: absolute;
+    font-size: small;
+    text-decoration: underline;
+    right: 10px !important;
 }
 
 .distance{
     margin-top: 3.5px;
     font-size: 10px;
-    color:black;
+    color: var(--ion-color-dark);
     float: right;
 }
 
@@ -65,16 +101,21 @@
     height: 100px;
 }
 
-.heart{
-    z-index: 2;
-    position: absolute;
-    top: 10px!important;
-    left: 75px!important;
-    font-size: 10px!important;
-    --background-color:white;
-    width: 25px;
-    height: 25px;
+@media only screen and (min-width: 768px) {
+    .heartSearch{
+        z-index: 2;
+        position: absolute;
+        top: 2.5%;
+        left: 29.5%;
+        font-size: 10px!important;
+        --background-color:white;
+        width: 50px;
+        height: 50px;
+    }
+
 }
+
+
 
 .iconHeart{
     font-size: 15px;
@@ -91,7 +132,7 @@
     
     
     padding-top: 0px!important;
-    color: black;
+    color: var(--ion-color-dark);
     font-size:12px!important;
     font-weight: bold;
     float:right;

@@ -1,0 +1,55 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+ion-header{
+    padding-top: 15px;
+    padding-bottom: 0px;
+}
+
+ion-toolbar{
+    padding-top: 15px;
+    padding-bottom: 0px;
+}
+
+ion-card-content{
+    width: 100%;
+    margin-left: 1%;
+    margin-right: auto;
+}
+
+ion-button{
+    position:absolute;
+    width: 25%;
+    top:50%;
+    left: 36%;
+}
+
+ion-card{
+    margin-top:0px;
+    padding-top:0px;
+}
+@media only screen and (max-width: 900px) {
+    ion-card-content{
+        width: 100%;
+        margin-left: 2%;
+        margin-right: auto;
+        
+    }
+
+    ion-button{
+        position:absolute;
+        width: 50%;
+        top:55px;
+        left: 65px;
+        --background: black!important;
+        color: white;
+    }
+    
+    .cardReview{
+        margin-top:0px;
+        margin-bottom: 0px;
+        padding-top:0px;
+        padding-bottom: 0px;
+    }
+}
+

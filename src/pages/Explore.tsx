@@ -1,6 +1,5 @@
 import { IonAvatar, IonButton, IonButtons, IonCard, IonCardContent, IonContent, IonFabButton, IonGrid, IonHeader, IonIcon, IonImg, IonItem, IonLabel, IonList, IonListHeader, IonPage, IonRow, IonSlide, IonSlides, IonTitle, IonToggle, IonToolbar } from '@ionic/react';
 import { addCircle, atCircle, bed, bedOutline, cash, cashOutline, chatboxOutline, heartCircleOutline, heartOutline, moon, radioButtonOff, radioButtonOn, restaurantOutline, ticket } from 'ionicons/icons';
-import ExploreContainer from '../components/ExploreContainer';
 import './Explore.css';
 import '../theme/variables.css';
 
@@ -40,6 +39,43 @@ const hotelsOpts = {
   spaceBetween: 10
 }
 
+const darkMode = (event: CustomEvent) => {
+  const toggle = document.querySelector('#themeToggle');
+  console.log(event.detail.checked);
+  if(event.detail.checked){
+    if (document.documentElement.classList.contains("light")) {
+      document.documentElement.classList.remove("light")
+      document.documentElement.classList.add("dark")
+    } else if (document.documentElement.classList.contains("dark")) {
+      document.documentElement.classList.remove("dark")
+      document.documentElement.classList.add("light")
+    } else {
+      if (window?.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.documentElement.classList.add("light")
+      } else {
+        document.documentElement.classList.add("dark")
+      }
+    }
+    
+  } else {
+    if (document.documentElement.classList.contains("light")) {
+      document.documentElement.classList.remove("light")
+      document.documentElement.classList.add("dark")
+    } else if (document.documentElement.classList.contains("dark")) {
+      document.documentElement.classList.remove("dark")
+      document.documentElement.classList.add("light")
+    } else {
+      if (window?.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.documentElement.classList.add("light")
+      } else {
+        document.documentElement.classList.add("dark")
+      }
+    }
+  }
+  
+}
+
+
 const Explore: React.FC = () => {
   return (
     <IonPage>
@@ -48,7 +84,7 @@ const Explore: React.FC = () => {
           <IonToolbar color="primary" no-border>
             <IonButtons className="toggle" slot="end">
               <IonIcon className="moon" icon={moon}></IonIcon>
-              <IonToggle className="toggle" value="banana" id="themeToggle"></IonToggle>
+              <IonToggle className="toggle" value="banana" id="themeToggle" onIonChange={darkMode}></IonToggle>
             </IonButtons>
             <IonTitle>
               Explore
@@ -79,6 +115,8 @@ const Explore: React.FC = () => {
           </IonRow>
         </IonGrid>
 
+ 
+
         <IonGrid className="ion-no-padding">
           <IonRow>
           <img className="header-image" src="/assets/images/Explore 800px.png"/>
@@ -86,10 +124,25 @@ const Explore: React.FC = () => {
 
           <IonRow>
             <IonList>
+
+              <IonRow>
+                <IonCard className="cardDiscover">
+                  <IonCardContent className="cardDiscoverContent">
+                    Discover more in Bengkulu
+                  </IonCardContent>
+                  
+                  <IonButton expand="block" className="discoverButton">
+                    Keep exploring
+                  </IonButton>
+     
+
+                </IonCard>
+              </IonRow>
+
               <IonListHeader>
-                Break your cabin fever
+                You might like these
               </IonListHeader>
-              <IonLabel className="labelContent">Trending trails, parks, and tours for every taste</IonLabel>
+              <IonLabel className="labelContent">More things to do in Bengkulu</IonLabel>
 
               <IonSlides className="slidesHotels" pager={false} options={hotelsOpts}>
                 {Trending.map(trending => (

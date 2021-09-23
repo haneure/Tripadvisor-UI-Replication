@@ -1,23 +1,37 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
+import { IonButton, IonCard, IonCardContent, IonContent, IonGrid, IonHeader, IonImg, IonItem, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import './Review.css';
 
 const Review: React.FC = () => {
   return (
     <IonPage>
-      <IonHeader>
-        <IonToolbar>
-          <IonTitle>Tab 1</IonTitle>
+
+
+      <IonContent fullscreen>
+      <IonHeader className="ion-no-border">
+        <IonToolbar className="toolbardSearchTitle" no-border>
+          <IonTitle>
+            Review
+          </IonTitle>
         </IonToolbar>
       </IonHeader>
-      <IonContent fullscreen>
-        <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">Tab 1</IonTitle>
-          </IonToolbar>
-        </IonHeader>
-        <ExploreContainer name="Tab 1 page" />
+        <IonGrid no-padding>
+          <IonCard className="cardReview">
+            <IonCardContent>
+              <IonImg className="bread" src="/assets/images/dessert.jpg"></IonImg>
+              <IonButton className="buttonReview">Write a review</IonButton>
+            </IonCardContent>
+          </IonCard>
+
+          <IonCard className="cardReview">
+            <IonCardContent>
+              <IonImg className="bread" src="/assets/images/bread.jpg"></IonImg>
+              <IonButton className="buttonReview">Upload a photo</IonButton>
+            </IonCardContent>
+          </IonCard>
+        </IonGrid>
+
       </IonContent>
+
     </IonPage>
   );
 };

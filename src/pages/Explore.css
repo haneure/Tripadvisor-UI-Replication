@@ -1,4 +1,6 @@
-
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
 ion-toolbar{
     padding-left:10px;
@@ -7,8 +9,25 @@ ion-toolbar{
     
 }
 
+ion-list {
+    background: transparent;
+
+
+}
+ion-item {
+    --background: inherit;
+}
+
+ion-header{
+    background: transparent;
+}
+
+ion-toolbar{
+    --background: inherit;
+}
+
 ion-title{
-    --color:black;
+    --color:var(--ion-color-dark);
     font-family: sans-serif;
     font-weight: 780;
     font-size: 25px;
@@ -16,7 +35,7 @@ ion-title{
 }
 
 ion-title.ios{
-    --color:black;
+    --color:var(--ion-color-dark);
     font-family: sans-serif;
     font-weight: 780;
     font-size: 25px;
@@ -38,7 +57,7 @@ ion-title.ios{
     
 
     ion-title{
-        --color:black;
+        --color:var(--ion-color-dark);
         font-family: sans-serif;
         font-weight: 780;
         font-size: 30px;
@@ -75,11 +94,12 @@ ion-title.ios{
     }
 
     .labelContent{
-        color: black;
+        color: var(--ion-color-dark);
         font-size: small;
         font-family: sans-serif;
         margin-left: 15px;
         font-weight: 100;
+        margin-bottom: 10px!important;
     }
 
     .leftCardHotels{
@@ -87,17 +107,60 @@ ion-title.ios{
         border-radius: 0px;
     }
 
+    .heart{
+        z-index: 2;
+        position: absolute;
+        top: 5%!important;
+        right: 10%!important;
+        font-size: 10px!important;
+        --background-color:white;
+        width: 30px;
+        height: 30px;
+    }
+
+    .discoverButton{
+        text-align: center;
+        --background: rgb(2, 87, 2)!important;
+        border-radius: 25px;
+        border: 2px solid white!important;
+        --border-color: white!important;
+        margin-left: auto;
+        margin-right: auto;
+        color: white;
+        font-weight: bold;
+        width: 25%;
+        margin-left: auto!important;
+        margin-right: auto!important;
+        margin-bottom:25px
+    }
+
 }
 
 ion-button{
     --border-radius: 50px;
     font-family: sans-serif!important;
-    color: black;
+    color: var(--ion-color-dark);
     font-weight: 500;
     text-transform: capitalize;
 }   
 
 @media only screen and (max-width: 900px) {
+    .discoverButton{
+        text-align: center;
+        --background: rgb(2, 87, 2)!important;
+        border-radius: 25px;
+        border: 2px solid white!important;
+        --border-color: white!important;
+        margin-left: auto;
+        margin-right: auto;
+        color: white;
+        font-weight: bold;
+        width: 50%;
+        margin-left: auto!important;
+        margin-right: auto!important;
+        margin-bottom:25px;
+        position:inherit;
+    }
     ion-slides{ 
         margin-top: 15px!important;
     }
@@ -145,12 +208,13 @@ ion-button{
     }
 
     .labelContent{
-        color: black;
+        color: var(--ion-color-dark);
         font-size: 14px;
         font-family: sans-serif;
         margin-top: 0px!important;
         margin-left: 4%;
         font-weight: 50;
+        margin-bottom: 10px!important;
     }
 
     .firstHotels{
@@ -184,7 +248,16 @@ ion-button{
         border-radius: 0px;
     }
 
-
+    .heart{
+        z-index: 2;
+        position: absolute;
+        top: 4%!important;
+        right: 8%!important;
+        font-size: 10px!important;
+        --background-color:white;
+        width: 30px;
+        height: 30px;
+    }
 
 }
 
@@ -198,16 +271,7 @@ ion-button{
     left: 4px;
 }
 
-.heart{
-    z-index: 2;
-    position: absolute;
-    top: 15px!important;
-    right: 15px!important;
-    font-size: 10px!important;
-    --background-color:white;
-    width: 30px;
-    height: 30px;
-}
+
 
 .iconHeart{
     font-size: 20px;
@@ -221,7 +285,7 @@ ion-card-content{
     text-align: left;
     padding-left: 0px!important;
     padding-top: 5px!important;
-    color: black;
+    color: var(--ion-color-dark);
     font-size:12px!important;
     font-weight: bold;
 }
@@ -269,7 +333,7 @@ ion-card-content p{
 
 ion-button{
     --background:white!important;
-    --color:black!important;
+    --color:var(--ion-color-dark)!important;
 
 }
 
@@ -309,3 +373,21 @@ ion-toggle.ios{
     zoom:0.8;
     --background: white;
 }
+
+.cardDiscover{
+    width: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: rgb(2, 87, 2);
+    margin-top: 30px;
+}
+
+.cardDiscoverContent{
+    text-align: center;
+    font-size: 30px!important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white!important;
+    align-items: center;
+    
+}
+

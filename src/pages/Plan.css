@@ -1,0 +1,134 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ion-segment{
+    --background:white;
+    --color:#2d2e87;
+    --color-checked: white;
+    --background-color:transparent;
+    font-size: 16px!important;
+    --color-activated:black!important;
+
+}
+
+ion-segment-button{
+    color:black;
+    --color-checked: black;
+    --background-color:transparent;
+    --color-activated:black!important;
+    --background-checked: transparent!important;
+    font-size: 12px!important;
+    font-weight: bold;
+    min-width: auto;
+    --color-focused:black;
+    text-transform: capitalize;
+}
+
+.planIcon{
+    --box-shadow:none;
+    --background:green!important;
+    width: 40px;
+    height: 40px;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+.icon{
+    font-size: 20px !important;;
+}
+
+.planLabel{
+    margin-left: 15px;
+    font-size: 14px;
+    margin-top: 15px;
+    font-family: sans-serif!important;
+}
+
+.planTitle{
+    padding-bottom:15px;
+}
+
+.inputPlan{
+    --color:black;
+    --highlight-color-focused: #e2e2e2!important;
+    --border-width: 1px;
+    --box-shadow:none;
+}
+
+.item-interactive {
+--highlight-color-focused: unset;
+--highlight-background: unset;
+}
+
+.itemPlan{
+    margin-top: 5px;
+    --ion-item-background: transparent;
+    --background: transparent!important;
+    background: transparent!important;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 3px;
+    --box-shadow: none!important;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%!important;
+    height: 40px!important;
+}
+
+.item-inner{
+    --background:transparent!important;
+}
+
+ion-input{
+    --placeholder-color: var(--ion-color-dark)!important;
+}
+
+.labelPlan{
+    font-size: 10px;
+    padding-top: 15px!important;
+    margin-bottom: 15px;
+    margin-top: 20px!important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --placeholder-font-size:10px!important;
+    --placeholder-color: var(--ion-color-dark)!important;
+    justify-content: center;
+    text-align: center;
+}
+
+.planButton{
+    position:inherit;
+    margin-top: 10px!important;
+    text-align: center;
+    color: grey;
+    --background: rgb(197, 197, 197)!important;
+    width: 100%;
+}
+
+.labelLogin{
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 14px!important;
+}
+
+.savesPlan{
+    text-align: center;
+}
+
+.h2{
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 0px;
+
+}
+
+.h4{
+    font-size: 12px;
+    margin-top: 5px;
+
+}
+
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
