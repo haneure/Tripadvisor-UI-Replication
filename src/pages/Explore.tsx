@@ -110,54 +110,6 @@ const Explore: React.FC = () => {
                 ))}
 
               </IonSlides>
-
-                 {/* <IonSlide className="firstHotels">
-                  <IonCard className="leftCardHotels">
-                    <IonImg className="imgHotels" src="/assets/images/Amsterdam.png"/>
-                    
-                    <IonCardContent>
-                      Panjang Beach<br/>
-                      <div className="circle"></div><div className="circle"></div><div className="circle"></div><div className="circle"></div><div className="circleOutline"></div> <span className="rating">186</span> <br/>
-                      
-                      <p>Beaches<br/>
-                      Bengkulu, Indonesia</p>
-                    </IonCardContent>
-                  </IonCard>
-                  <IonFabButton color="light" className="heart"><IonIcon className="iconHeart" icon={heartOutline}></IonIcon></IonFabButton>
-                </IonSlide>
-
-                <IonSlide className="firstHotels">
-                  <IonCard className="leftCardHotels">
-                    <IonImg className="imgHotels" src="/assets/images/Amsterdam.png"/>
-                    
-                    <IonCardContent>
-                      Panjang Beach<br/>
-                      <div className="circle"></div><div className="circle"></div><div className="circle"></div><div className="circle"></div><div className="circleOutline"></div> <span className="rating">186</span> <br/>
-                      
-                      <p>Beaches<br/>
-                      Bengkulu, Indonesia</p>
-                    </IonCardContent>
-                  </IonCard>
-                  <IonFabButton color="light" className="heart"><IonIcon className="iconHeart" icon={heartOutline}></IonIcon></IonFabButton>
-                </IonSlide>
-
-                <IonSlide className="firstHotels">
-                  <IonCard className="leftCardHotels">
-                    <IonImg className="imgHotels" src="/assets/images/Amsterdam.png"/>
-                    
-                    <IonCardContent>
-                      Panjang Beach<br/>
-                      <div className="circle"></div><div className="circle"></div><div className="circle"></div><div className="circle"></div><div className="circleOutline"></div> <span className="rating">186</span> <br/>
-                      
-                      <p>Beaches<br/>
-                      Bengkulu, Indonesia</p>
-                    </IonCardContent>
-                  </IonCard>
-                  <IonFabButton color="light" className="heart"><IonIcon className="iconHeart" icon={heartOutline}></IonIcon></IonFabButton>
-                </IonSlide> */}
-
-              
-
             </IonList>
           </IonRow>
 
@@ -176,29 +128,8 @@ const Explore: React.FC = () => {
                       <span className="labelHotels">{stays.loc}</span>
                     </IonCard>
                   </IonSlide>
-                  
                 ))}
                 </IonSlides>
-                {/* <IonSlide className="hotels">
-                  <IonCard className="cardHotels">
-                    <IonImg className="imgHotels" src="/assets/images/Amsterdam.png"/>
-                    <span className="labelHotels">Barcelona</span>
-                  </IonCard>
-                </IonSlide>
-                <IonSlide className="hotels">
-                  <IonCard className="cardHotels">
-                    <IonImg className="imgHotels" src="/assets/images/Amsterdam.png"/>
-                    <span className="labelHotels">Bath</span>
-                  </IonCard>
-                </IonSlide>
-                <IonSlide className="hotels">
-                  <IonCard className="cardHotels">
-                    <IonImg className="imgHotels" src="/assets/images/Amsterdam.png"/>
-                    <span className="labelHotels">Brighton</span>
-                  </IonCard>
-                </IonSlide> */}
-
-              
             </IonList>
           </IonRow>
 
@@ -208,9 +139,7 @@ const Explore: React.FC = () => {
                 Plan your next escape
               </IonListHeader>
               <IonLabel className="labelContent">Family-friendly spots to explore</IonLabel>
-
               <IonSlides className="slidesHotels" pager={false} options={hotelsOpts}>
-
                 {Plan.map(plan => (
                   <IonSlide className="firstHotels">
                     <IonCard className="leftCardHotels">
@@ -223,45 +152,7 @@ const Explore: React.FC = () => {
                     <IonFabButton color="light" className="heart"><IonIcon className="iconHeart" icon={heartOutline}></IonIcon></IonFabButton>
                   </IonSlide>
                 ))}
-
               </IonSlides>
-
-                {/* <IonSlide className="firstHotels">
-                  <IonCard className="leftCardHotels">
-                    <IonImg className="imgHotels" src="/assets/images/Amsterdam.png"/>
-                    <IonCardContent>
-                      Java<br/>
-                      <p>Indonesia, Asia</p>
-                    </IonCardContent>
-                  </IonCard>
-                  <IonFabButton color="light" className="heart"><IonIcon className="iconHeart" icon={heartOutline}></IonIcon></IonFabButton>
-                </IonSlide>
-                
-                <IonSlide className="firstHotels">
-                  <IonCard className="leftCardHotels">
-                    <IonImg className="imgHotels" src="/assets/images/Amsterdam.png"/>
-                    <IonCardContent>
-                      Flores<br/>
-                      <p>East Nusa Tenggara, Indonesia</p>
-                    </IonCardContent>
-                  </IonCard>
-                  <IonFabButton color="light" className="heart"><IonIcon className="iconHeart" icon={heartOutline}></IonIcon></IonFabButton>
-                </IonSlide>
-
-                <IonSlide className="firstHotels">
-                  <IonCard className="leftCardHotels">
-                    <IonImg className="imgHotels" src="/assets/images/Amsterdam.png"/>
-                    <IonCardContent>
-                      Lombok<br/>
-                      <p>Indonesia, Asia</p>
-                    </IonCardContent>
-                  </IonCard>
-                  <IonFabButton color="light" className="heart"><IonIcon className="iconHeart" icon={heartOutline}></IonIcon></IonFabButton>
-                </IonSlide> */}
-              
-
-
-              
             </IonList>
           </IonRow>
 

@@ -40,26 +40,6 @@
         left: 5px;
     }
 
-    .card{
-        background-color: rgb(0, 95, 0);
-        border-radius: 0px;
-        align-items: center;
-    }
-
-    .cardHeader{
-        text-align: center;
-        font-size:36px!important;
-        font-weight: 700;
-        color: white;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif!important;
-        padding-left: 30px!important;
-        padding-right: 30px!important;
-    }
-
-    .cardButton{
-        background-color: rgb(0, 95, 0)!important;
-    }
-
     .seeAll{
         position: absolute;
         font-size: small;
@@ -67,3 +47,77 @@
         right: 10px !important;
     }
 }
+
+.distance{
+    margin-top: 3.5px;
+    font-size: 10px;
+    color:black;
+    float: right;
+}
+
+.imgCol{
+    width: 100px!important;
+}
+
+.img{
+    border-radius: 0px;
+    width: 100px!important;
+    height: 100px;
+}
+
+.heart{
+    z-index: 2;
+    position: absolute;
+    top: 10px!important;
+    left: 75px!important;
+    font-size: 10px!important;
+    --background-color:white;
+    width: 25px;
+    height: 25px;
+}
+
+.iconHeart{
+    font-size: 15px;
+}
+
+.card{
+    display: flex;
+}
+
+.cardContent{
+    display: flex-end;
+    text-align: left;
+    padding-left: 0px!important;
+    
+    
+    padding-top: 0px!important;
+    color: black;
+    font-size:12px!important;
+    font-weight: bold;
+    float:right;
+    width:100%;
+}
+
+.distance{
+    display: flex-end;
+}
+
+ion-card-content p{
+    font-size:12px!important;
+    margin-top: 0px!important;
+}
+
+.fixed{
+    position: fixed;
+}
+
+.labelHotels{
+    position: absolute;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: sans-serif!important;
+    bottom: 10px!important;;
+    left: 10px;
+}
+
